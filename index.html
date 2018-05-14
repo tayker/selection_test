@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="form"> 
+        <label class="label">
+           <span class="label__text">
+                Name
+            </span>
+            <input type="text" name="name">
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <label class="label">
+           <span class="label__text">
+               Lastname
+            </span>
+            <input type="text" name="lastname">
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <label class="label">
+           <span class="label__text">
+               Date
+           </span>
+            <input type="date" name="date" required>
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <div class="wrapper">
+           <span class="title">
+               Gender
+           </span>
+            <div class="wrapper--radio">
+                <label class="label">
+                   <span class="label__text">
+                       Male
+                   </span>
+                    <input type="radio" name="gender" checked>
+                </label>
+                <label class="label">
+                   <span class="label__text">
+                       Female
+                   </span>
+                    <input type="radio" name="gender">
+                </label>
+            </div>
+        </div>
+        <label class="label">
+           <span class="label__text">
+               Country
+           </span>
+            <select name="counry">
+                <option value="">Ukraine</option>
+                <option value="">Poland</option>
+                <option value="">OAE</option>
+            </select>
+        </label>
+        <label class="label">
+           <span class="label__text">
+               Email
+           </span>
+            <input type="text" name="email" id="email">
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <label class="label">
+           <span class="label__text">
+               Password
+           </span>
+            <input type="password" name="password">
+            
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <label class="label">
+           <span class="label__text">
+               Address
+           </span>
+            <input type="text" name="address">
+            
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <label class="label">
+           <span class="label__text">
+               Message
+           </span>
+            <textarea cols="30" rows="10" name="message"></textarea>
+            
+            <span class="error-message">
+                
+            </span>
+        </label>
+        <button class="button">
+            Submit
+        </button>
+    </form>
+    <div id="overlay"></div>
+    <div id="popUp">
+        <div class="text">
+            Congrads <br>
+            You success logging in
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
